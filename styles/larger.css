@@ -22,6 +22,7 @@
         align-items: center;
         background-color: black;
         padding: 0.1rem;
+        margin: 0.3rem 0.3vw;
     }
 
     #menu {
@@ -70,6 +71,7 @@
         background-color: rgba(10, 50, 80, 0.9);
         color: white;
         font-size: 2rem;
+        margin: 0.3rem 0.3vw;
     }
 
     header img {
@@ -121,6 +123,7 @@
         background-color: rgba(10, 50, 80, 0.9);
         color: white;
         text-align: center;
+        margin: 0.3rem 0.3vw;
     }
 
     footer #lastModified {
