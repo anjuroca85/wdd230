@@ -1,58 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Andres Rojas - WDD 230 - Web Frontend Development</title>
-    <meta name="description" content="WDD 230 - Web Frontend Development | Andres Rojas | course assignment portal">
-    <meta name="author" content="Andres Julian Rojas Caballero">
-    <link rel="preconnect" href="htpps://fonts.googleapis.com">
-    <link rel="preconnect" href="htpps://fonts.gstatic.com" crossorigin>
+    <meta
+      name="description"
+      content="WDD 230 - Web Frontend Development | Andres Rojas | course assignment portal"
+    />
+    <meta name="author" content="Andres Julian Rojas Caballero" />
 
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/larger.css">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
 
-<body>
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+  </head>
+
+  <body>
     <header>
+      <img
+        src="images/andresrojas-profile.jpg"
+        alt="Andres Rojas Profile Picture"
+        width="75"
+        height="100"
+      />
+      <span> Andres Rojas</span>
     </header>
 
     <nav>
-
-        <ul id="menu">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="Chamber.html">Chamber</a></li>
-            <li><a href="Site-Plan.html">Site Plan</a></li>
-            <li><a href="Form.html">Form</a></li>
-        </ul>
+      <ul id="menu">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="Chamber.html">Chamber</a></li>
+        <li><a href="Site-Plan.html">Site Plan</a></li>
+        <li><a href="Form.html">Form</a></li>
+      </ul>
     </nav>
 
     <main>
-        <h1>
-            WDD 230: Web Frontend Development
-        </h1>
-
+      <h1>WDD 230: Web Frontend Development</h1>
+      <div class="parent">
         <section class="card">
-            <h2>Learning Activities</h2>
-            <ul>
-                <li>
-                    <a></a>
-                </li>
-            </ul>
-
+          <h2>Learning Activities</h2>
+          <ul>
+            <li>
+              Week 01:<a href="week01/holygrail.html">Layout</a> |
+              <a href="week01/media-query.html">Media Query</a> |
+              <a href="https://codepen.io/anjuroca85/pen/bGJzxQL">JS Pen</a>
+            </li>
+            <li>Week 02:</li>
+            <li>Week 03:</li>
+            <li>Week 04:</li>
+            <li>Week 05:</li>
+            <li>Week 06:</li>
+          </ul>
         </section>
 
         <section class="card">
-            <h2>Information</h2>
+          <h2>Information</h2>
+          <p>Weather: <span id="weather">Placeholder</span></p>
+          <p>Number of visits: <span id="visits">Placeholder</span></p>
         </section>
+      </div>
     </main>
 
     <footer>
-        <p>&copy; [20xx] Andres Rojas Colombia</p>
-        <p id="lastModified"></p>
-
+      <p>
+        &copy; <span id="year"></span> &bull; Andres Rojas - Colombia
+        <img src="images/colombian_flag.png" alt="Colombian Flag" />
+      </p>
+      <p id="lastModified"></p>
     </footer>
-</body>
-
+    <script src="scripts/getDates.js"></script>
+  </body>
 </html>
