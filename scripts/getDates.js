@@ -8,6 +8,9 @@ document.addEventListener("DOMContentLoaded", function() {
     const lastModifiedDate = new Date(document.lastModified);
     // Format the last modified date as desired (optional)
     const formattedLastModifiedDate = lastModifiedDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
-    // Update the content of the paragraph element with the ID "lastModified" to display the last modified date
-    document.getElementById("lastModified").textContent = `Last modified: ${formattedLastModifiedDate}`;
+     // Get the current time
+    const currentTime = new Date().toLocaleTimeString('en-US', {hour12: false});
+
+    // Update the content of the paragraph element with the ID "lastModified" to display the last modified date and time
+    document.getElementById("lastModified").textContent = `Last modified: ${formattedLastModifiedDate}, Time: ${currentTime}`;
 });
