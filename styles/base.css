@@ -187,8 +187,13 @@
 
         /* Adding styles for dark mode */
         .dark-mode {
-            background: rgba(0, 0, 0, 0.9);
-            color: #fff;
+            background: #121212;
+            color: #ffffff;
+        }
+
+        .dark-mode a {
+            color: #4ca7e1;
+            /* Light blue link color */
         }
 
         main h1 {
