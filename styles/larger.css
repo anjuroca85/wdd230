@@ -1,4 +1,4 @@
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 499px) {
     * {
         /* CSS reset */
         margin: 0;
@@ -24,6 +24,14 @@
         padding: 0.1rem;
         margin: 0.3rem 0.3vw;
     }
+
+    /* change for ham open */
+
+    #myButton {
+        display: none;
+    }
+
+    /* change for ham close */
 
     #menu {
         list-style-type: none;

@@ -1,4 +1,4 @@
-    @media screen and (max-width: 450px) {
+    @media screen and (max-width: 498px) {
         * {
             /* CSS reset */
             margin: 0;
@@ -20,12 +20,47 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background-color: black;
+            background-color: rgba(0, 0, 0, 0.8);
             padding: 0.1rem;
             margin: 0.3rem 0.3vw;
         }
 
+        /* change for ham open */
+        #myButton::before {
+            content: "\2630";
+        }
+
+        #myButton {
+            font-size: 2rem;
+            background: none;
+            border: none;
+            color: #ffffff;
+            cursor: pointer;
+            width: 2.75rem;
+            text-align: left;
+            padding: 0.25rem 2vw;
+            position: absolute;
+            top: 2.5rem;
+            right: 2vw;
+
+        }
+
+        /* change for ham close */
+
         #menu {
+            display: none;
+            /* list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            max-width: 3000px;
+            margin: auto; */
+        }
+
+        /* change for ham open */
+        #menu li {
             list-style-type: none;
             padding: 0;
             margin: 0;
@@ -34,12 +69,13 @@
             flex: 1;
             max-width: 3000px;
             margin: auto;
-        }
 
-        #menu li {
-            flex: 1;
+
+            /* flex: 1; */
             text-align: center;
         }
+
+        /* change for ham close */
 
         #menu li a {
             text-decoration: none;
@@ -59,11 +95,23 @@
         }
 
 
-        nav .active {
+        nav #menu .active {
             background-color: rgba(0, 0, 0, 0.3);
         }
 
 
+        /* change for ham open */
+
+        /* CSS for the open class */
+        #myButton.open::before {
+            content: "X";
+        }
+
+        #menu.open {
+            display: block;
+        }
+
+        /* change for ham close */
         header {
             display: flex;
             align-items: center;
