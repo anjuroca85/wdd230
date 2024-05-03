@@ -138,6 +138,22 @@
         color: yellow;
     }
 
+    #darkBtn {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        width: 24px;
+        cursor: pointer;
+        background-color: #fff;
+        border: none;
+    }
+
+    /* Adding styles for dark mode */
+    .dark-mode {
+        background: rgba(0, 0, 0, 0.9);
+        color: #fff;
+    }
+
     main {
         /* margin: center; */
         padding: 4rem;
