@@ -1,0 +1,11 @@
+/* Media query for larger screens */
+@media screen and (min-width: 500px) {
+    nav {
+        display: block;
+    }
+
+    .menu-toggle {
+        /* The following code hides the hamburger menu for screens larger than 500px */
+        display: none;
+    }
+}

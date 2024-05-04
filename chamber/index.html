@@ -8,8 +8,10 @@
     <meta name="description" content="Home page of Chamber of commerce project">
     <meta name="author" content="Andres Julian Rojas Caballero">
 
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+
     <link rel="icon" href="favicon.ico">
     <meta property="fb:app_id" content="285837434583427">
     <meta property="og:title" content="Sioux Falls - Chamber of Commerce">
@@ -26,16 +28,67 @@
         content="https://www.visittheusa.co/sites/default/files/styles/16_9_1280x720/public/2017-03/fd943f3007281b392df4188513a1cdff.jpeg?h=9c2070a3&itok=9dQB3CpJ">
     <meta name="twitter:card" content="summary">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
 </head>
 
 <body>
     <header>
-        <h1>Page Title - Heading 1</h1>
+        <h1>Sioux Falls Chamber of Commerce</h1>
+        <nav>
+            <ul>
+                <li><a href="#join">Join</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#weather">Weather</a></li>
+                <li><a href="#spotlights">Spotlights</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav></nav>
-    <main></main>
-    <footer>&copy;Andres Rojas | BYU-Idaho | WDD 230 - Spring 2024</footer>
-    <script src="scripts/"></script>
+    <main>
+        <section id="hero">
+            <div id="hero-box">
+                <img id="hero-img" src="images/hero-image-siouxfalls-district.jpeg" alt="Sioux Falls district view">
+            </div>
+        </section>
+
+        <section id="join">
+            <!-- The following code is a Call to action to join the chamber -->
+            <h2>Join the Sioux Falls Chamber of Commerce <mark>NOW</mark></h2>
+            <p>Discover the benefits of becoming a member and contribute to the growth of Sioux Falls.</p>
+            <a href="membership.html" class="cta-button">Join Now</a>
+        </section>
+
+        <section id="events">
+            <!-- The following are the Current events section -->
+            <h2>Upcoming Events</h2>
+            <p>Stay updated with our latest events promoting business networking and community engagement.</p>
+            <!-- Placeholder for events -->
+        </section>
+
+        <section id="weather">
+            <!-- The following is the Weather card section -->
+            <h2>Current Weather</h2>
+            <p>Check the current weather forecast for Sioux Falls.</p>
+            <!-- Placeholder for weather card -->
+        </section>
+
+        <section id="spotlights">
+            <!-- Company spotlights section -->
+            <h2>Company Spotlights</h2>
+            <p>Discover featured businesses and organizations in Sioux Falls.</p>
+            <!-- Placeholder for spotlights -->
+        </section>
+    </main>
+    <footer>
+        <p>
+            &copy; <span id="year"></span><br>
+            &bull; Andres Rojas &bull; BYU-Idaho <br>
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDatesChamber.js"></script>
 </body>
 
 </html>

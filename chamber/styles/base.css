@@ -1,0 +1,72 @@
+/* base.css */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+
+h1 h2 {
+    font-weight: 100;
+}
+
+header {
+    background-color: #28a745b3;
+    color: #000000;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+    /* color: #007bffe6; */
+    color: #000000;
+    /* Primary color for headings */
+}
+
+/* Navigation styles */
+nav {
+    /* It Hides the navigation menu by default */
+    display: none;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    /* White text color */
+    text-decoration: none;
+}
+
+/* Hamburger menu styles */
+.menu-toggle {
+    display: block;
+    cursor: pointer;
+    color: #fff;
+    font-size: 24px;
+}
+
+footer {
+    background-color: #28a745b3;
+    color: white;
+    text-align: center;
+    margin: 0.3rem 0.3vw;
+}
+
+footer #lastModified {
+    color: yellow;
+}
