@@ -26,7 +26,7 @@
 
     #menuChamber li a {
         text-decoration: none;
-        color: white;
+        color: #000000;
         padding: 1rem 2rem;
         transition: background-color 0.3s;
         display: block;
