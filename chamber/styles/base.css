@@ -3,7 +3,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    padding: 0.1rem;
+    padding: 0.3rem;
     margin: 0.3rem 0.3vw;
 }
 
@@ -28,8 +28,8 @@ header nav {
     align-items: center;
 }
 
-h1 {
-    margin: 0;
+header h1 {
+    margin: 0.2rem;
     color: #000000;
 }
 
@@ -74,7 +74,7 @@ nav ul li a {
     padding: 0.25rem 2vw;
     position: absolute;
     top: 1rem;
-    right: 2rem;
+    right: 0.6rem;
 }
 
 #menuChamber {
