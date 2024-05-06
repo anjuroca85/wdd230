@@ -3,8 +3,8 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    margin: 0;
-    padding: 0;
+    padding: 0.1rem;
+    margin: 0.3rem 0.3vw;
 }
 
 /* Header styles */
@@ -14,6 +14,12 @@ h1 h2 {
 }
 
 header {
+    background-color: #28a745b3;
+    color: #000000;
+
+}
+
+header nav {
     background-color: #28a745b3;
     color: #000000;
     padding: 10px 20px;
@@ -27,6 +33,10 @@ h1 {
     /* color: #007bffe6; */
     color: #000000;
     /* Primary color for headings */
+}
+
+#hero-img {
+    width: 100%;
 }
 
 /* Navigation styles */
@@ -47,22 +57,73 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #000000;
     /* White text color */
     text-decoration: none;
 }
 
 /* Hamburger menu styles */
-.menu-toggle {
+
+/* change for ham open */
+#myButton::before {
+    content: "\2630";
+
+}
+
+#myButton {
+    font-size: 2rem;
+    color: #000000;
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 2.75rem;
+    padding: 0.25rem 2vw;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menuChamber {
+    display: none;
+}
+
+/* change for ham open */
+#menuChamber li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    max-width: 3000px;
+    margin: auto;
+    text-align: center;
+}
+
+#menuChamber li a {
+    text-decoration: none;
+    color: #000000;
+    padding: 1rem 2rem;
+    transition: background-color 0.3s;
+    display: block;
+}
+
+
+
+/* CSS for the open class */
+#myButton.open::before {
+    content: "X";
+}
+
+#menuChamber.open {
     display: block;
     cursor: pointer;
-    color: #fff;
     font-size: 24px;
 }
 
 footer {
     background-color: #28a745b3;
-    color: white;
+    color: #000000;
     text-align: center;
     margin: 0.3rem 0.3vw;
 }

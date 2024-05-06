@@ -30,7 +30,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/larger.css">
+    <!-- <link rel="stylesheet" href="styles/larger.css"> -->
 
 </head>
 
@@ -38,7 +38,8 @@
     <header>
         <h1>Sioux Falls Chamber of Commerce</h1>
         <nav>
-            <ul>
+            <button type="button" id="myButton" aria-label="hamburger"></button>
+            <ul id="menuChamber">
                 <li><a href="#join">Join</a></li>
                 <li><a href="#events">Events</a></li>
                 <li><a href="#weather">Weather</a></li>
@@ -82,6 +83,7 @@
         </section>
     </main>
     <footer>
+        <p><a href="contactus.html">Contact Us</a></p>
         <p>
             &copy; <span id="year"></span><br>
             &bull; Andres Rojas &bull; BYU-Idaho <br>
@@ -89,6 +91,7 @@
         <p id="lastModified"></p>
     </footer>
     <script src="scripts/getDatesChamber.js"></script>
+    <script src="scripts/hamChamber.js"></script>
 </body>
 
 </html>

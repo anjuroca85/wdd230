@@ -4,7 +4,7 @@
         display: block;
     }
 
-    .menu-toggle {
+    #myButton {
         /* The following code hides the hamburger menu for screens larger than 500px */
         display: none;
     }
