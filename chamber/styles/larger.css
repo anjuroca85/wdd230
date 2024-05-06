@@ -8,4 +8,32 @@
         /* The following code hides the hamburger menu for screens larger than 500px */
         display: none;
     }
+
+    #menuChamber {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex: 1;
+        max-width: 3000px;
+        margin: auto;
+    }
+
+    #menuChamber li {
+        flex: 1;
+        text-align: center;
+    }
+
+    #menuChamber li a {
+        text-decoration: none;
+        color: white;
+        padding: 1rem 2rem;
+        transition: background-color 0.3s;
+        display: block;
+    }
+
+    #menuChamber li a:hover {
+        /* background-color: #21a760; */
+        background-color: rgba(40, 167, 69, 1);
+    }
 }
