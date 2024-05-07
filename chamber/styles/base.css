@@ -16,7 +16,7 @@ h1 h2 {
 header {
     background-color: #28a745b3;
     color: #000000;
-    padding: 0.2rem;
+    padding: 1rem 0.5rem;
 }
 
 header nav {
@@ -29,7 +29,7 @@ header nav {
 }
 
 header h1 {
-    margin: 0.2rem;
+    margin: 0.5rem;
     color: #000000;
 }
 
@@ -118,8 +118,13 @@ footer {
     color: #000000;
     text-align: center;
     margin: 0.3rem 0.3vw;
+    padding: 1rem 0.5rem
 }
 
 footer #lastModified {
-    color: #bc4749;
+    color: #000000;
+}
+
+footer a {
+    color: #000066;
 }
