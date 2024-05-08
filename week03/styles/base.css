@@ -1,0 +1,42 @@
+h1 {
+    text-align: center;
+    background-color: beige;
+}
+
+/* The following code centers images and applies fade animation */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: beige;
+}
+
+img {
+
+    width: 100%;
+
+
+    /* Apply fading-in animation */
+    animation: fadeIn 5s ease-in-out forwards;
+
+    /* Initially setting opacity to 0 */
+    opacity: 0;
+
+}
+
+/* Keyframes for fading-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+footer {
+    margin: 1rem;
+    text-align: center;
+    background-color: beige;
+}
