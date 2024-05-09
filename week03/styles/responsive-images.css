@@ -1,0 +1,14 @@
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+header {
+    background-color: beige;
+    text-align: center;
+}
+
+footer {
+    background-color: beige;
+    text-align: center;
+}

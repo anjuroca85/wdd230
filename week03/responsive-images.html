@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Response</title>
+    <meta name="description" content="Hands on a picture element">
+    <meta name="author" content="Andres Julian Rojas Caballero">
+    <link rel="stylesheet" href="styles/responsive-images.css">
+</head>
+
+<body>
+    <header>
+        <h1>Image Response - Picture Element</h1>
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 500px)" srcset="images/hero-small.webp">
+                <source media="(max-width: 1000px)" srcset="images/hero-medium.webp">
+                <img src="images/hero-large.webp" alt="London Temple" width="1500" height="750">
+            </picture>
+        </div>
+    </main>
+
+    <footer>
+        &copy;Andres Rojas | BYU-Idaho | WDD 230 - Spring 2024
+    </footer>
+
+    <script src="scripts/"></script>
+</body>
+
+</html>
