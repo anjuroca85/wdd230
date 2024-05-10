@@ -11,6 +11,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 
     <link rel="icon" href="favicon.ico">
     <meta property="fb:app_id" content="285837434583427">
@@ -32,7 +35,7 @@
 
 <body>
     <header>
-        <img src="images/andresrojas-profile.jpg" alt="Andres Rojas Profile Picture" width="75" height="100">
+        <img src="images/andresrojas-profile.webp" alt="Andres Rojas Profile Picture" width="75" height="100">
         <span> Andres J. Rojas</span>
         <img src="images/dark-theme-42px.png" alt="dark mode" id="darkBtn">
     </header>
@@ -48,6 +51,16 @@
     </nav>
 
     <main>
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 400px)" srcset="images/hero-small.webp">
+                <source media="(max-width: 960px)" srcset="images/hero-medium.webp">
+                <img src="images/hero-large.webp" alt="Rome Italy temple" width="1500" height="750">
+            </picture>
+            <div class="herolabel">
+                <p>Rome Italy temple</p>
+            </div>
+        </div>
         <h1>WDD 230: Web Frontend Development</h1>
         <div class="parent">
             <section class="card">
@@ -82,10 +95,20 @@
             <section class="card">
                 <h2>Information</h2>
                 <p>Weather: <span id="weather">Placeholder</span></p>
-                <p>Number of visits: <span id="visits">Placeholder</span></p>
+                <p>Number of visits: <span id="visits"></span></p>
             </section>
         </div>
     </main>
+
+    <div class="container">
+        <div class="iframe-wrapper">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7919.080480789572!2d-73.1040238!3d7.0631799!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e683f6ed4ffc7dd%3A0x67fb9685b8ec81dc!2sCaminos%20De%20Provvidenza!5e0!3m2!1sen!2sus!4v1715307647006!5m2!1sen!2sus"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
 
     <footer>
         <p>
@@ -99,6 +122,7 @@
     <script src="scripts/getDates.js"></script>
     <script src="scripts/menuHam.js"></script>
     <script src="scripts/darkBtn.js"></script>
+    <script src="scripts/numVisits.js"></script>
 </body>
 
 </html>

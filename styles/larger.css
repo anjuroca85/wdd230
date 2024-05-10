@@ -1,4 +1,4 @@
-@media screen and (min-width: 499px) {
+@media screen and (min-width: 850px) {
     * {
         /* CSS reset */
         margin: 0;
@@ -14,6 +14,43 @@
 
     h1 h2 {
         font-weight: 100;
+    }
+
+    .hero {
+        /* margin: 10px auto; */
+        position: relative;
+        border: 10px solid rgba(0, 0, 0, .1);
+    }
+
+    .hero picture {
+        width: 100%;
+    }
+
+    .hero img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        display: block;
+    }
+
+    .herolabel {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        background: radial-gradient(rgb(255, 255, 255), rgba(0, 0, 0, .2));
+        border: 1px solid rgba(0, 0, 0, .6);
+        padding: 1.5rem;
+        box-shadow: 0 0 3rem #fff;
+        opacity: 0.75;
+    }
+
+    .herolabel p {
+        margin: 0;
+        padding: .25rem;
+        font-size: 1.5rem;
+        font-family: "Great Vibes", serif;
+        font-weight: 400;
+        font-style: normal;
     }
 
     nav {
@@ -125,6 +162,30 @@
 
         /* Remove bullets */
         list-style-type: none;
+    }
+
+    .container {
+        /* Ensures the container serves as a reference for absolute positioning */
+        position: relative;
+        width: 100%;
+        /* Set the desired height for the container */
+        height: 300px;
+    }
+
+    .iframe-wrapper {
+        /* Positions the iframe wrapper relative to the container */
+        position: absolute;
+        /* Aligns the top of the iframe wrapper to the middle of the container */
+        top: 50%;
+        /* Aligns the left of the iframe wrapper to the middle of the container */
+        left: 50%;
+        /* Moves the iframe wrapper back by half of its own dimensions to center it */
+        transform: translate(-50%, -50%);
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
     }
 
     footer {
