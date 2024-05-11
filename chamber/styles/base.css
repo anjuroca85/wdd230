@@ -113,6 +113,67 @@ nav ul li a {
     font-size: 24px;
 }
 
+/* New rules to base.css */
+
+#visit,
+#demographics,
+#education,
+#economy,
+#health {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#gallery {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* Display each image in its own column */
+    gap: 10px;
+    /* Add gap between images */
+}
+
+.image-container {
+    display: block;
+    /* Ensure each image occupies its own column */
+}
+
+#gallery img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+#gallery img:hover {
+    transform: scale(1.1);
+}
+
+/* #gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.image-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+#gallery img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+#gallery img:hover {
+    transform: scale(1.1);
+} */
+
+/* End */
+
 footer {
     background-color: #28a745b3;
     color: #000000;

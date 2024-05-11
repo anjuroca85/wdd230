@@ -4,9 +4,14 @@
         padding: 1rem;
     }
 
-    #main-grid {
+    #main-grid-index {
         display: grid;
         grid-template: auto 1fr 1fr / 1fr 1fr;
+    }
+
+    #main-grid {
+        display: grid;
+        grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr;
     }
 
     #hero {
@@ -22,6 +27,36 @@
 
     #hero-img {
         height: auto;
+    }
+
+    #visit {
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+
+    #demographics {
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+
+    #education {
+        grid-row: 3/4;
+        grid-column: 1/2;
+    }
+
+    #calendar {
+        grid-row: 4/5;
+        grid-column: 1/2;
+    }
+
+    #health {
+        grid-row: 5/6;
+        grid-column: 1/2;
+    }
+
+    #gallery {
+        grid-row: 1/6;
+        grid-column: 2/3;
     }
 
     #join {

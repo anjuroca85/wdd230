@@ -18,4 +18,49 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById(
     "lastModified"
   ).textContent = `Last modified: ${formattedLastModifiedDate}, Time: ${currentTime}`;
+
+  // Check if it's the user's first visit
+  if (!localStorage.getItem("lastVisit")) {
+    document.getElementById("visit").textContent =
+      "Welcome! Let us know if you have any questions.";
+  } else {
+    const lastVisitDate = parseInt(localStorage.getItem("lastVisit"));
+    const currentDate = Date.now();
+    const timeDifference = currentDate - lastVisitDate;
+    const daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+    if (daysDifference === 1) {
+      document.getElementById("visit").textContent =
+        "You last visited 1 day ago.";
+    } else {
+      document.getElementById(
+        "visit"
+      ).textContent = `You last visited ${daysDifference} days ago.`;
+    }
+  }
+  // Update the last visit date in localStorage
+  localStorage.setItem("lastVisit", Date.now().toString());
+});
+
+// Lazy loading for images
+document.addEventListener("DOMContentLoaded", function () {
+  const images = document.querySelectorAll("#gallery img");
+
+  const lazyLoad = (target) => {
+    const io = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const img = entry.target;
+          const src = img.getAttribute("data-src");
+          img.setAttribute("src", src);
+          observer.disconnect();
+        }
+      });
+    });
+
+    io.observe(target);
+  };
+
+  images.forEach((image) => {
+    lazyLoad(image);
+  });
 });
