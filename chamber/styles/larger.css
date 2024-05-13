@@ -11,7 +11,7 @@
 
     #main-grid {
         display: grid;
-        grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr;
+        grid-template: 0.1fr 1fr 1fr 1fr / 1fr 1fr;
     }
 
     #hero {
