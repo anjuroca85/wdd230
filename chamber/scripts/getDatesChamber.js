@@ -43,20 +43,18 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
   const images = document.querySelectorAll("#gallery img");
 
-  const lazyLoad = (target) => {
-    const io = new IntersectionObserver((entries, observer) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting || !("IntersectionObserver" in window)) {
-          const img = entry.target;
-          const src = img.getAttribute("data-src");
-          img.setAttribute("src", src);
-          observer.disconnect();
-        }
-      });
+  const io = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting || !("IntersectionObserver" in window)) {
+        const img = entry.target;
+        const src = img.getAttribute("data-src");
+        img.setAttribute("src", src);
+        observer.disconnect();
+      }
     });
+  });
 
-    images.forEach((image) => {
-      lazyLoad(image);
-    });
-  };
+  images.forEach((image) => {
+    io.observe(image);
+  });
 });
