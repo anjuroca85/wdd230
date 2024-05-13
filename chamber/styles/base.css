@@ -135,11 +135,6 @@ nav ul li a {
     /* Add gap between images */
 }
 
-.image-container {
-    display: block;
-    /* Ensure each image occupies its own column */
-}
-
 #gallery img {
     width: 100%;
     height: auto;
@@ -150,29 +145,23 @@ nav ul li a {
     transform: scale(1.1);
 }
 
-/* #gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 10px;
+
+.image-container picture {
+    position: relative;
+    display: inline-block;
 }
 
-.image-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-}
-
-#gallery img {
+.picture-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
     width: 100%;
-    height: auto;
-    transition: transform 0.3s ease;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
 }
-
-#gallery img:hover {
-    transform: scale(1.1);
-} */
-
-/* End */
 
 footer {
     background-color: #28a745b3;
