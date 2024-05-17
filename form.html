@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andres Rojas - WDD 230 - Web Frontend Development form page</title>
+    <meta name="description" content="WDD 230 - form page">
+    <meta name="author" content="Andres Julian Rojas Caballero">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/andresrojas-profile.webp" alt="Andres Rojas Profile Picture" width="75" height="100">
+        <span> Andres J. Rojas</span>
+        <img src="images/dark-theme-42px.png" alt="dark mode" id="darkBtn">
+    </header>
+
+    <nav>
+        <button type="button" id="myButton" aria-label="hamburger"></button>
+        <ul id="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="Site-Plan.html">Site Plan</a></li>
+            <li class="active"><a href="Form.html">Form</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>HTML Form</h1>
+        <form action="record.html" method="get" id="signup-form">
+            <label for="uname">Username:*
+                <input type="text" id="uname" name="uname" required>
+            </label>
+            <label for="password">Password:*
+                <input type="password" pattern="[a-zA-Z0-9]{8,}" id="password" name="password"
+                    title="Password must be at least 8 characters long and contain only alphanumeric characters."
+                    required>
+            </label>
+            <label for="confirm-password">Re-enter Password:*
+                <input type="password" id="confirm-password" name="confirm-password"
+                    title="Password must match the previous password" required>
+            </label>
+            <div id="feedback"></div>
+            <label for="email">Email:*
+                <input type="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" id="email" name="email"
+                    placeholder="someone@byui.edu" title="Please enter a valid email address" required>
+            </label>
+            <label for="range">Page Rating
+                <input type="range" id="range" name="range" min="1" max="10" value="1" step="1" list="rangevalues">
+                <datalist id="rangevalues">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </datalist>
+            </label>
+            <div id="rangevalue">1</div>
+            <input type="submit" value="Sign Up">
+        </form>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="year"></span><br>
+            &bull; Andres Julian Rojas Caballero &bull;<br>
+            Colombia
+            <img src="images/colombian_flag.png" alt="Colombian Flag">
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/menuHam.js"></script>
+    <script src="scripts/darkBtn.js"></script>
+    <script src="scripts/formvalidation.js"></script>
+</body>
+
+</html>

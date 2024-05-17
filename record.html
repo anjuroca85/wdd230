@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andres Rojas - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development | Andres Rojas | course assignment portal">
+    <meta name="author" content="Andres Julian Rojas Caballero">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="favicon.ico">
+    <meta property="fb:app_id" content="285837434583427">
+    <meta property="og:title" content="Home - WDD230 Web Frontend Development">
+    <meta property="og:description" content="Provides outputs from the Web Frontend Development course exercises">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://ciudadflorida.com/wp-content/uploads/2021/11/Florodafoto.jpg">
+    <meta property="og:url" content="https://anjuroca85.github.io/wdd230/">
+    <meta name="twitter:title" content="Home - WDD230 Web Frontend Development">
+    <meta name="twitter:description" content="Provides outputs from the Web Frontend Development course exercises">
+    <meta name="twitter:image" content="https://ciudadflorida.com/wp-content/uploads/2021/11/Florodafoto.jpg">
+    <meta name="twitter:card" content="summary">
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/andresrojas-profile.webp" alt="Andres Rojas Profile Picture" width="75" height="100">
+        <span> Andres J. Rojas</span>
+        <img src="images/dark-theme-42px.png" alt="dark mode" id="darkBtn">
+    </header>
+
+    <nav>
+        <button type="button" id="myButton" aria-label="hamburger"></button>
+        <ul id="menu">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="Site-Plan.html">Site Plan</a></li>
+            <li><a href="Form.html">Form</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Form message</h1>
+        <p>Your form was successfully submitted</p>
+    </main>
+
+    <div class="container">
+        <div class="iframe-wrapper">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7919.080480789572!2d-73.1040238!3d7.0631799!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e683f6ed4ffc7dd%3A0x67fb9685b8ec81dc!2sCaminos%20De%20Provvidenza!5e0!3m2!1sen!2sus!4v1715307647006!5m2!1sen!2sus"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+
+    <footer>
+        <p>
+            &copy; <span id="year"></span><br>
+            &bull; Andres Julian Rojas Caballero &bull;<br>
+            Colombia
+            <img src="images/colombian_flag.png" alt="Colombian Flag">
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/menuHam.js"></script>
+    <script src="scripts/darkBtn.js"></script>
+    <script src="scripts/numVisits.js"></script>
+</body>
+
+</html>
