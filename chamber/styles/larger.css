@@ -128,4 +128,23 @@
     footer a {
         color: #000066;
     }
+
+    .wf1 fieldset label input[type="radio"] {
+        margin: -1rem 0 0 12rem;
+    }
+
+    #membership-benefits {
+        border: 1px solid #ccc;
+        padding: 1rem;
+        background-color: #f9f9f9;
+    }
+
+    #membership-benefits ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    #membership-benefits ul li {
+        margin-bottom: 1rem;
+    }
 }

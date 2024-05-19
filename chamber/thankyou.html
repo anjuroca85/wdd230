@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You!</title>
+    <link rel="stylesheet" href="styles/base.css">
+</head>
+
+<body>
+    <header>
+        <h1>Sioux Falls Chamber of Commerce</h1>
+    </header>
+    <main>
+        <h2>Thank You for Joining!</h2>
+        <p>We appreciate your interest in joining the Sioux Falls Chamber of Commerce. We will contact you shortly with
+            more information.</p>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span><br> &bull; Andres Rojas &bull; BYU-Idaho <br></p>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const currentYear = new Date().getFullYear();
+            document.getElementById("year").textContent = currentYear;
+        });
+    </script>
+</body>
+
+</html>

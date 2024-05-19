@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Chamber of Commerce Join Page</title>
+    <meta name="description" content="Join page of Chamber of commerce project">
+    <meta name="author" content="Andres Julian Rojas Caballero">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="favicon.ico">
+    <meta property="fb:app_id" content="285837434583427">
+    <meta property="og:title" content="Sioux Falls - Join Chamber of Commerce">
+    <meta property="og:description"
+        content="The Chamber of Commerce is a collaborative group of businesses, organizations and individuals that strive to make business and life better.">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://www.visittheusa.co/sites/default/files/styles/16_9_1280x720/public/2017-03/fd943f3007281b392df4188513a1cdff.jpeg?h=9c2070a3&itok=9dQB3CpJ">
+    <meta property="og:url" content="https://anjuroca85.github.io/wdd230/chamber">
+    <meta name="twitter:title" content="Sioux Falls - Join Chamber of Commerc">
+    <meta name="twitter:description"
+        content="The Chamber of Commerce is a collaborative group of businesses, organizations and individuals that strive to make business and life better.">
+    <meta name="twitter:image"
+        content="https://www.visittheusa.co/sites/default/files/styles/16_9_1280x720/public/2017-03/fd943f3007281b392df4188513a1cdff.jpeg?h=9c2070a3&itok=9dQB3CpJ">
+    <meta name="twitter:card" content="summary">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Sioux Falls Chamber of Commerce</h1>
+        <nav>
+            <button type="button" id="myButton" aria-label="hamburger"></button>
+            <ul id="menuChamber">
+                <li><a href="#join">Join</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#weather">Weather</a></li>
+                <li><a href="#spotlights">Spotlights</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main-grid-index">
+        <form action="thankyou.html" method="get" class="wf1">
+            <label for="fname">First Name:*
+                <input type="text" name="fname" id="fname" required>
+            </label>
+            <label for="lname">Last Name:*
+                <input type="text" name="lname" id="lname" required>
+            </label>
+            <label for="title">Title:
+                <input type="text" name="title" id="title" pattern="[a-zA-Z\- ]{7,}">
+            </label>
+            <label for="email">Email address:*
+                <input type="email" name="email" id="email" placeholder="someone@exampleDomain.com" required>
+            </label>
+            <label for="phone">Mobile Phone Number:*
+                <input type="tel" name="phone" id="phone" required>
+            </label>
+            <label for="business">Business Name:*
+                <input type="text" name="business" id="business" required>
+            </label>
+            <fieldset>
+                <legend>Membership Level:</legend>
+                <label for="np-membership">NP Membership (No fee)
+                    <input type="radio" name="member-level" id="np-membership" value="NP">
+                </label>
+                <label for="bronze-membership">Bronze Membership
+                    <input type="radio" name="member-level" id="bronze-membership" value="Bronze">
+                </label>
+                <label for="silver-membership">Silver Membership
+                    <input type="radio" name="member-level" id="silver-membership" value="Silver">
+                </label>
+                <label for="gold-membership">Gold Membership
+                    <input type="radio" name="member-level" id="gold-membership" value="Gold">
+                </label>
+            </fieldset>
+            <label for="description">Business Description:
+                <textarea name="description" id="description"></textarea>
+            </label>
+            <input type="hidden" name="timestamp" id="timestamp" value="">
+            <input type="submit" value="Join the Chamber">
+        </form>
+        <section id="membership-benefits">
+            <h2>Membership Benefits</h2>
+            <ul>
+                <li>NP Membership: Access to events and networking opportunities.</li>
+                <li>Bronze Membership: Includes NP benefits plus promotional materials.</li>
+                <li>Silver Membership: Includes Bronze benefits plus training sessions.</li>
+                <li>Gold Membership: Includes Silver benefits plus spotlight positions and event discounts.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p><a href="contactus.html">Contact Us</a></p>
+        <p>
+            &copy; <span id="year"></span><br>
+            &bull; Andres Rojas &bull; BYU-Idaho <br>
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDatesChamber.js"></script>
+    <script src="scripts/hamChamber.js"></script>
+</body>
+
+</html>

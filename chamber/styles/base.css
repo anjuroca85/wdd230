@@ -163,6 +163,39 @@ nav ul li a {
     text-align: center;
 }
 
+/* Form styles */
+
+.wf1 label {
+    display: block;
+    padding: 0.5rem 0;
+}
+
+.wf1 input,
+.wf1 textarea {
+    display: block;
+    padding: 0.5rem 0;
+    width: 85%;
+    max-width: 400px;
+}
+
+.wf1 fieldset {
+    margin: 1rem 0;
+    padding: 1rem;
+    border: 1px solid #ccc;
+}
+
+.wf1 fieldset legend {
+    font-weight: bold;
+    padding: .5rem;
+
+}
+
+.wf1 fieldset label input[type="radio"] {
+    margin-top: -1rem;
+    margin-left: 4rem;
+}
+
+/* Footer styles */
 footer {
     background-color: #28a745b3;
     color: #000000;
