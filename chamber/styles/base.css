@@ -187,7 +187,7 @@ nav ul li a {
 .wf1 input[type='tel'],
 .wf1 textarea {
     display: block;
-    padding: .75rem;
+    padding: .75rem 0;
     border: 1px solid #ccc;
     border-radius: 6px;
     width: 100%;
