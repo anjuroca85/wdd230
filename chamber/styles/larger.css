@@ -117,7 +117,6 @@
     }
 
     #menuChamber li a:hover {
-        /* background-color: #21a760; */
         background-color: rgba(40, 167, 69, 1);
     }
 
@@ -130,7 +129,9 @@
     }
 
     .wf1 fieldset label input[type="radio"] {
-        margin: -1rem 0 0 12rem;
+        margin-top: 0%;
+        margin-left: 40%;
+        margin-right: 60%;
     }
 
     #membership-benefits {

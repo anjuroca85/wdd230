@@ -165,33 +165,6 @@ nav ul li a {
 
 /* Form styles */
 
-.wf1 label {
-    display: block;
-    padding: 0.5rem 0;
-}
-
-.wf1 input,
-.wf1 textarea {
-    display: block;
-    padding: .75rem 0;
-    width: 96%;
-    max-width: 400px;
-}
-
-/* .wf1 fieldset {
-    margin: 1rem 0;
-    padding: 1rem;
-    border: 1px solid #ccc;
-    width: 90%;
-    max-width: 450px;
-}
-
-.wf1 fieldset legend {
-    font-weight: bold;
-    padding: .5rem;
-
-} */
-
 .wf1 fieldset {
     margin: 2rem 0;
     border: 1px solid #ccc;
@@ -204,22 +177,39 @@ nav ul li a {
     padding: 0 .5rem;
 }
 
-/* .wf1 fieldset label input[type="radio"] {
-    margin-top: -1rem;
-    margin-left: 4rem;
-} */
+.wf1 label {
+    display: block;
+    padding-top: 1rem;
+}
 
-.wf1 input[type="radio"] {
-    margin-top: -1rem;
-    margin-right: 6px;
+.wf1 input[type='text'],
+.wf1 input[type='email'],
+.wf1 input[type='tel'],
+.wf1 textarea {
+    display: block;
+    padding: .75rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}
+
+.wf1 input[type='radio'] {
+
+    margin-left: 60%;
+    margin-right: 40%;
 }
 
 .wf1 input[type='submit'] {
     border-radius: 6px;
     border: none;
     background-color: rgba(0, 81, 255, 0.831);
-    padding: 0.8rem;
-    box-shadow: 1px 1px 4px #999;
+    padding: .8rem;
+    width: 96%;
+    max-width: 400px;
+    margin: 2rem 2% 2rem 2%;
+    box-shadow: 1px 1px 4px #ccc;
 }
 
 /* Footer styles */
