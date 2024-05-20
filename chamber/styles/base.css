@@ -182,6 +182,7 @@ nav ul li a {
     margin: 1rem 0;
     padding: 1rem;
     border: 1px solid #ccc;
+    max-width: fit-content;
 }
 
 .wf1 fieldset legend {
@@ -190,9 +191,14 @@ nav ul li a {
 
 }
 
+/* * {
+    border: 3px solid blue;
+} */
+
 .wf1 fieldset label input[type="radio"] {
     margin-top: -1rem;
     margin-left: 4rem;
+    margin-right: 400px; 
 }
 
 /* Footer styles */
