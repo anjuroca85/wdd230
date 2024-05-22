@@ -1,0 +1,24 @@
+{
+    "familyName" : "Rojas Luna",
+    "dateMovedIn" : "2020-01-05",
+    "numberFamilyRecord" : 4,
+    "visitedByBishopric" : true,
+    "FamilyMembers" : [
+        {"name" : "Andres Rojas",
+        "gender" : "male",
+        "birthday" : "1985-08-31"
+        },
+        {"name" : "Gloria Luna",
+        "gender" : "female",
+        "birthday" : "1985-08-31"
+        },        
+        {"name" : "Gabriela Rojas",
+        "gender" : "female",
+        "birthday" : "2009-12-14"
+        },        
+        {"name" : "Juan Andres Rojas",
+        "gender" : "male",
+        "birthday" : "2013-09-26"
+        }
+    ]
+}
