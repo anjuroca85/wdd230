@@ -1,5 +1,5 @@
-// const baseURL = "https://anjuroca85.github.io/wdd230/";
-const baseURL = "http://127.0.0.1:5500/";
+const baseURL = "https://anjuroca85.github.io/wdd230/";
+//const baseURL = "http://127.0.0.1:5500/";
 const linksURL = `${baseURL}data/links.json`;
 
 async function getLinks() {
