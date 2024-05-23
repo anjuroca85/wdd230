@@ -194,6 +194,22 @@
             text-align: center;
         }
 
+        figure {
+            text-align: center;
+            padding: 0.3rem;
+        }
+
+        section p {
+            text-align: left;
+            padding: 0.3rem;
+        }
+
+        figure #weather-icon {
+            border: 3px solid rgba(0, 0, 0, .3);
+            border-radius: 0.2rem;
+            margin-top: 1rem;
+        }
+
         .parent ul {
             padding: 20px;
 

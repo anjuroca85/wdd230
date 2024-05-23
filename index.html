@@ -65,45 +65,20 @@
         <div class="parent">
             <section class="card">
                 <h2>Learning Activities</h2>
-                <ul>
-                    <li>
-                        Week 01:<a href="week01/holygrail.html">Layout</a> |
-                        <a href="week01/media-query.html">Media Query</a> |
-                        <a href="https://codepen.io/anjuroca85/pen/bGJzxQL">JS Pen</a> |
-                        <a href="week01/chamber-site-plan.html">Chamber</a>
-                    </li>
-
-                    <li>Week 02:<a href="week02/design.html">Design Principles</a> |
-                        <a href="https://codepen.io/anjuroca85/pen/bGJyoML">Responsive Menu Pen</a> |
-                        <a href="week02/bom.html">Book of Mormon - Top 10</a>
-                    </li>
-
-                    <li>Week 03:<a href="week03/images/landscape.webp">WebP</a> |
-                        <a href="week03/lazyload.html">lazy load demostration</a> |
-                        <a href="week03/responsive-images.html">Responsive Images</a> |
-                        <a href="week03/bom.html">BOM - Local Storage</a>
-                        <a href="chamber/discover.html">The Chamber Discover Page</a>
-                    </li>
-
-                    <li>Week 04:<a href="https://codepen.io/anjuroca85/pen/PovqaqR">CSS Pseudo-classes</a> |
-                        <a href="week04/images/css-combinators.png">CSS combinators</a> |
-                        <a href="week04/tablebuild.html">HTML table</a> |
-                        <a href="week04/Form-start/index.html">HTML forms</a>
-                    </li>
-
-                    <li>Week 05: <a href="https://codepen.io/anjuroca85/pen/NWVrbYw">CSS Pseudo-elements</a> |
-                        <a href="week05/new-ward-members.json">JSON</a> |
-                        <a href="week05/prophets.html">The Fetch API</a> |
-                        <a href="week05/weather.html">Weather API</a>
-                    </li>
-
-                    <li>Week 06:</li>
-                </ul>
+                <!-- The static links were replaced with JS, so only ul element was left -->
+                <!-- The li & a elements were replaced with JS. Also the words as in Weekxx -->
+                <ul id="activityLinks"></ul>
             </section>
 
-            <section class="card">
+            <section class="card information-section">
                 <h2>Information</h2>
-                <p>Weather: <span id="weather">Placeholder</span></p>
+                <p>Weather:</p>
+
+                <figure>
+                    <span id="weather"></span>
+                    <img id="weather-icon" src="icon" alt="description">
+                    <figcaption></figcaption>
+                </figure>
                 <p>Number of visits: <span id="visits"></span></p>
             </section>
         </div>
@@ -132,6 +107,8 @@
     <script src="scripts/menuHam.js"></script>
     <script src="scripts/darkBtn.js"></script>
     <script src="scripts/numVisits.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/links.js"></script>
 </body>
 
 </html>
