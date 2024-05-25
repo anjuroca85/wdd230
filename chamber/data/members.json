@@ -1,0 +1,72 @@
+[
+    {
+        "name": "Company simulated A",
+        "altDesc": "A",
+        "address": "123 Main St, Sioux Falls, SD",
+        "phone": "(555) 123-4567",
+        "website": "https://companya.com",
+        "image": "companya.png",
+        "membershipLevel": "Gold",
+        "description": "Leading company in Sioux Falls."
+    },
+    {
+        "name": "Company simulated B",
+        "altDesc": "B",
+        "address": "456 Elm St, Sioux Falls, SD",
+        "phone": "(555) 234-5678",
+        "website": "https://companyb.com",
+        "image": "companyb.png",
+        "membershipLevel": "Silver",
+        "description": "Pioneer in innovative solutions."
+    },
+    {
+        "name": "Company simulated C",
+        "altDesc": "C",
+        "address": "789 Oak St, Sioux Falls, SD",
+        "phone": "(555) 345-6789",
+        "website": "https://companyc.com",
+        "image": "companyc.png",
+        "membershipLevel": "Bronze",
+        "description": "Excellence in customer service."
+    },
+    {
+        "name": "Company simulated D",
+        "altDesc": "D",
+        "address": "101 Pine St, Sioux Falls, SD",
+        "phone": "(555) 456-7890",
+        "website": "https://companyd.com",
+        "image": "companyd.png",
+        "membershipLevel": "NP",
+        "description": "Top-rated company in the industry."
+    },
+    {
+        "name": "Company simulated E",
+        "altDesc": "E",
+        "address": "202 Birch St, Sioux Falls, SD",
+        "phone": "(555) 567-8901",
+        "website": "https://companye.com",
+        "image": "companye.png",
+        "membershipLevel": "Gold",
+        "description": "Industry leader with a focus on quality."
+    },
+    {
+        "name": "Company simulated F",
+        "altDesc": "F",
+        "address": "303 Cedar St, Sioux Falls, SD",
+        "phone": "(555) 678-9012",
+        "website": "https://companyf.com",
+        "image": "companyf.png",
+        "membershipLevel": "Silver",
+        "description": "Innovative solutions for modern problems."
+    },
+    {
+        "name": "Company simulated G",
+        "altDesc": "G",
+        "address": "404 Spruce St, Sioux Falls, SD",
+        "phone": "(555) 789-0123",
+        "website": "https://companyg.com",
+        "image": "companyg.png",
+        "membershipLevel": "Bronze",
+        "description": "Dedicated to providing top-notch services."
+    }
+]
