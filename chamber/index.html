@@ -68,17 +68,23 @@
             <!-- Placeholder for events -->
         </section>
 
-        <section id="weather">
+        <section id="weather-section">
             <!-- The following is the Weather card section -->
             <h2>Current Weather</h2>
-            <p>Check the current weather forecast for Sioux Falls.</p>
-            <!-- Placeholder for weather card -->
+            <p>Check the current weather for Sioux Falls.</p>
+            <figure>
+                <span id="weather"></span>
+                <img id="weather-icon">
+                <figcaption></figcaption>
+            </figure>
+            <div id="forecast"></div>
         </section>
 
         <section id="spotlights">
             <!-- Company spotlights section -->
             <h2>Company Spotlights</h2>
             <p>Discover featured businesses and organizations in Sioux Falls.</p>
+            <div class="spotlight-card"></div>
             <!-- Placeholder for spotlights -->
         </section>
     </main>
@@ -92,6 +98,9 @@
     </footer>
     <script src="scripts/getDatesChamber.js"></script>
     <script src="scripts/hamChamber.js"></script>
+    <script src="scripts/chamberWeather.js"></script>
+    <script src="scripts/spotlight.js"></script>
+    <script src="scripts/banner.js"></script>
 </body>
 
 </html>

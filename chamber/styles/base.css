@@ -243,6 +243,94 @@ button:hover {
     text-align: center;
 }
 
+/* Weather section styles */
+#weather-section {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#weather-section h2 {
+    margin-bottom: 1rem;
+}
+
+#weather-section figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#weather-section img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Spotlights section styles */
+#spotlights {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#spotlights h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.spotlight-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 20px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.spotlight-card img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.spotlight-card h3 {
+    margin: 10px 0;
+}
+
+.spotlight-card p {
+    margin: 5px 0;
+}
+
+/* Banner styles */
+#banner {
+    display: none;
+    padding: 1rem;
+    background-color: #ffcc00;
+    color: #000000;
+    text-align: center;
+    position: relative;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+
+#banner button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
 /* Form styles */
 
 .wf1 fieldset {
