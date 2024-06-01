@@ -255,6 +255,7 @@ button:hover {
 
 #weather-section h2 {
     margin-bottom: 1rem;
+    padding-top: 2.5rem;
 }
 
 #weather-section figure {
